@@ -4,7 +4,7 @@ set -ev
 
 DEST=$HOME/deps
 
--d $DEST/usr/bin/sdl2-config && exit
+[[ -d $DEST/usr/bin/sdl2-config ]] && exit
 
 mkdir -p $DEST
 cd $DEST
